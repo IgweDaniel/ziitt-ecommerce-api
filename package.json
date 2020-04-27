@@ -1,0 +1,41 @@
+{
+  "name": "zitt-server",
+  "version": "1.0.0",
+  "description": "An fictional e-commerce api built with Node Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test_dev": "jest --runInBand --watch",
+    "dev": "nodemon index && export ENVIRONMENT=development",
+    "start": "node index"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgweDaniel/zitt-e-commerce-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgweDaniel/zitt-e-commerce-api/issues"
+  },
+  "homepage": "https://github.com/IgweDaniel/zitt-e-commerce-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "contentful": "^7.14.3",
+    "contentful-management": "^5.26.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.10",
+    "stripe": "^8.47.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.4.0",
+    "supertest": "^4.0.2"
+  }
+}
