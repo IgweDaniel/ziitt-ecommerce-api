@@ -25,7 +25,9 @@ const testing = {
   test_db_uri: getEnv("DATABASE_URL"),
 };
 
-const all = {};
+const all = {
+  privateKey: getEnv("SECRET_KEY"),
+};
 
 const enviroment =
   process.env["ENVIRONMENT"] == "development" ? development : testing;

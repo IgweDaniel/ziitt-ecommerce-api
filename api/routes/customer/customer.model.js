@@ -26,6 +26,14 @@ const CustomerSchema = new Schema({
   },
 });
 
+CustomerSchema.pre("save", async function () {
+  try {
+    const hash = await bycrypt.hash(this.password, 10);
+    this.password = hash;
+  } catch (error) {
+    throw Error(error);
+  }
+});
 CustomerSchema.methods.checkPassword = function (password) {
   return bycrypt.compare(password, this.password);
 };
