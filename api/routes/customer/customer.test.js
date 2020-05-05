@@ -93,8 +93,6 @@ describe("Customer Endpoints", () => {
   });
 });
 
-describe("Customer Endpoints", () => {});
-
 afterAll(async (done) => {
   await Customer.deleteMany({});
   await db.close();
