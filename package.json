@@ -7,7 +7,8 @@
     "test": "jest",
     "test_dev": "jest --runInBand --watch",
     "dev": "nodemon index && export ENVIRONMENT=development",
-    "start": "node index"
+    "start": "node index",
+    "seed": "node seed.js"
   },
   "jest": {
     "testEnvironment": "node"

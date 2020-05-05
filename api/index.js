@@ -6,8 +6,10 @@ const { mongo_uri } = require("./config/config");
 const db = require("./config/db");
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(require("./middleware/protected"));
 
 app.use("/api/customers", require("./routes/customer"));
+app.use("/api/cart", require("./routes/cart"));
 
 module.exports = {
   app,
