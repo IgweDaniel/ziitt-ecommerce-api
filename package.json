@@ -4,7 +4,7 @@
   "description": "An fictional e-commerce api built with Node Js",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --runInBand ",
     "test_dev": "jest --runInBand --watch",
     "dev": "nodemon index && export ENVIRONMENT=development",
     "start": "node index",
@@ -34,9 +34,12 @@
     "stripe": "^8.47.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
+    "install": "^0.13.0",
     "jest": "^25.4.0",
+    "npm": "^6.14.5",
     "supertest": "^4.0.2"
   }
 }

@@ -4,7 +4,7 @@ module.exports = {
   close: async () => {
     await mongoose.connection.close();
   },
-  reset: (name) => mongoose.connection.model(name).deleteMany({}),
+  reset: (name) => mongoose.connection.model(name).remove({}),
   open: async (db_uri) => {
     try {
       await mongoose.connect(db_uri, {
