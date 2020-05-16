@@ -9,6 +9,6 @@ An fictional e-commerce api built with Node Js and deployed on [heroku](https://
 - [Stripe](https://stripe.com/en-ca) - for credit card/payment processing
 - [Mongodb Atlas](https://stripe.com/en-ca) - for storing customer data
 
-## License
+<!-- ## License -->
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+<!-- This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details -->

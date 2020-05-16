@@ -1,3 +1,3 @@
-const api = require("./api");
+const api = require("./src");
 
 api.init();

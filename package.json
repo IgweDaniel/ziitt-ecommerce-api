@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --runInBand ",
     "test_dev": "jest --runInBand --watch",
-    "dev": "nodemon index && export ENVIRONMENT=development",
+    "dev": "nodemon index && set ENVIRONMENT='development'",
     "start": "node index",
     "seed": "node seed.js"
   },
@@ -25,9 +25,11 @@
   },
   "homepage": "https://github.com/IgweDaniel/zitt-e-commerce-api#readme",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "bcryptjs": "^2.4.3",
     "contentful": "^7.14.3",
     "contentful-management": "^5.26.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.10",
